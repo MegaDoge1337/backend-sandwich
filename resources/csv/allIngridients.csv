@@ -1,0 +1,25 @@
+Хлеб (верх);upperBread;./ingridients/upperBread.png;./ingridientsIcons/bread.png
+Хлеб (низ);lowerBread;./ingridients/lowerBread.png;./ingridientsIcons/bread.png
+Ростбиф;beef;./ingridients/beef.png;./ingridientsIcons/beef.png
+Крабовое мясо;crab;./ingridients/crab.png;./ingridientsIcons/crab.png
+Крем сыр;creamcheese;./ingridients/creamcheese.png;./ingridientsIcons/creamcheese.png
+Курица;chicken;./ingridients/chicken.png;./ingridientsIcons/chicken.png
+Мясная котлета;cutlet;./ingridients/cutlet.png;./ingridientsIcons/cutlet.png
+Ветчина;ham;./ingridients/ham.png;./ingridientsIcons/ham.png
+Салями;salami;./ingridients/salami.png;./ingridientsIcons/salami.png
+Лосось;salmon;./ingridients/salmon.png;./ingridientsIcons/salmon.png
+Куриные сосиски;sausages;./ingridients/sausages.png;./ingridientsIcons/sausages.png
+Тунец;tuna;./ingridients/tuna.png;./ingridientsIcons/tuna.png
+Индейка;turkey;./ingridients/turkey.png;./ingridientsIcons/turkey.png
+Огурцы;cucumber;./ingridients/cucumber.png;./ingridientsIcons/cucumber.png
+Перец халапеньо;jalapeno;./ingridients/jalapeno.png;./ingridientsIcons/jalapeno.png
+Салат латук;lattuce;./ingridients/lattuce.png;./ingridientsIcons/lattuce.png
+Оливки;olives;./ingridients/olives.png;./ingridientsIcons/olives.png
+Лук;onion;./ingridients/onion.png;./ingridientsIcons/onion.png
+Перец;pepper;./ingridients/pepper.png;./ingridientsIcons/pepper.png
+Томат;tomato;./ingridients/tomato.png;./ingridientsIcons/tomato.png
+Бекон;bacon;./ingridients/bacon.png;./ingridientsIcons/bacon.png
+Сыр;cheese;./ingridients/cheese.png;./ingridientsIcons/cheese.png
+Грибы;mushrooms;./ingridients/mushrooms.png;./ingridientsIcons/mushrooms.png
+Пепперони;pepperoni;./ingridients/pepperoni.png;./ingridientsIcons/pepperoni.png
+Соус;souce;./ingridients/souce.png;./ingridientsIcons/souce.png
