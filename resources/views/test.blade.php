@@ -6,5 +6,6 @@
         <title>Laravel</title>
     </head>
     <body>
+        <img src="{{ $path }}" alt="none">
     </body>
 </html>

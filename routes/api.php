@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/products_list', 'App\Http\Controllers\API\ProductListController@store')->name('product_list.store');
+
+Route::get('/image/{dir}/{title}', ['as' => 'site.viewImage', 'uses' => 'App\Http\Controllers\API\ImageController@viewImage']);

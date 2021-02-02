@@ -26,4 +26,11 @@ use Illuminate\Database\Eloquent\Model;
 class ProductsList extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'title_ru',
+        'title_en',
+        'image_path',
+        'icon_path'
+    ];
 }

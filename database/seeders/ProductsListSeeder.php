@@ -15,12 +15,14 @@ class ProductsListSeeder extends Seeder
      */
     public function run()
     {
-        $csvPath = Storage::disk('local')->getDriver()->getAdapter()->getPathPrefix() . 'public/csv/allIngredients.csv';
+        $csvPath = Storage::disk('local')->getDriver()->getAdapter()->getPathPrefix() . 'public/csv/allIngredients.csv'; // path to csv-table
 
-        $csv = array_map('str_getcsv', file($csvPath));
+        $csv = array_map('str_getcsv', file($csvPath)); // map csv-table to array
         foreach ($csv as $productList) {
             foreach ($productList as $product) {
+                //  parse csv row
                 $csvLine = str_getcsv($product, $separator = ";");
+                // insert data into table
                 DB::table('products_lists')->insert([
                     "title_ru" => $csvLine[0],
                     "title_en" => $csvLine[1],

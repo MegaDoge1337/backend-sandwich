@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/Http/Controllers/API/ImageController.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Http/Controllers/API/ProductListController.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Http/Controllers/TestController.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Models/DTO/ProductsListDTO.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Models/ProductsList.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/composer.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/database/migrations/2021_02_01_150651_create_products_lists_table.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" charset="UTF-8" />
