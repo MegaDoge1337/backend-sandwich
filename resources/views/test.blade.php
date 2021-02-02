@@ -6,6 +6,5 @@
         <title>Laravel</title>
     </head>
     <body>
-        <pre></pre>
     </body>
 </html>

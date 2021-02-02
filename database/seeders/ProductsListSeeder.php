@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Storage;
 
 class ProductsListSeeder extends Seeder
 {
@@ -10,10 +11,13 @@ class ProductsListSeeder extends Seeder
      * Run the database seeds.
      *
      * @return void
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function run()
     {
-        $csv = array_map('str_getcsv', file(dirname(__FILE__) . '/../../resources/csv/allIngridients.csv'));
+        $csvPath = Storage::disk('local')->getDriver()->getAdapter()->getPathPrefix() . 'public/csv/allIngredients.csv';
+
+        $csv = array_map('str_getcsv', file($csvPath));
         foreach ($csv as $productList) {
             foreach ($productList as $product) {
                 $csvLine = str_getcsv($product, $separator = ";");
