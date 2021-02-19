@@ -15,9 +15,28 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+    return auth()->user();
 });
 
-Route::get('/products_list', 'App\Http\Controllers\API\ProductListController@store')->name('product_list.store');
+/*
+ * Site functional routes
+ */
+Route::group(['namespace' => 'App\Http\Controllers\Api',], function ($router) {
+    Route::get('/products_list', 'ProductListController@store')->name('site.viewProductsList'); // List of products
+    Route::get('/image/{dir}/{title}', 'ImageController@viewImage')->name('site.viewImage'); // Images
+});
 
-Route::get('/image/{dir}/{title}', ['as' => 'site.viewImage', 'uses' => 'App\Http\Controllers\API\ImageController@viewImage']);
+/*
+ * Auth functional routes
+ */
+Route::group(['namespace' => 'App\Http\Controllers\Api\Auth',], function ($router) {
+    Route::post('/register', 'RegisterController@register')->name('auth.register');
+    Route::post('/login', 'LoginController@login')->name('auth.login');
+    Route::post('/logout', 'LoginController@logout')->name('auth.logout');
+    Route::post('/refresh', 'LoginController@refresh')->name('auth.refresh');
+});
+
+
+
+
+
